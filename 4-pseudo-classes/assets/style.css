@@ -21,6 +21,10 @@ body {
     background-color: rgb(253, 53, 153);
 }
 
+h2 {
+    text-align: center;
+}
+
 div {
     margin: 10% 5%;
 }
@@ -77,4 +81,24 @@ input:checked + label{
 /* negar | fazer uma exceção. Dentro do parenteses pode ser qualquer atritbuto. Ex: checked, focus, atributos, classes, etc*/
 p:not(.meio) {
     color: rgb(247, 145, 216);
+}
+
+/* Selecionar os irmãos pares (even = par) */
+ul li:nth-child(even) {
+    background: #B0005c;
+}
+
+/* Selecionar os irmãos impares (odd = par) */
+ul li:nth-child(odd) {
+    background: darkturquoise;
+}
+
+/* Selecionar de 4 em 4 */
+ul li:nth-child(4n) {
+    background: hotpink;
+}
+
+/* Começa a contar de 2 em 2 a partir do 5º elemento */
+ul li:nth-child(2n+5) {
+    background: yellowgreen;
 }
