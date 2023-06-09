@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.pai h1+p {
+    color: red;
+}
+
+.pai p+h1 {
+    color: blueviolet;
+}
+
+.pai2 {
+    padding-top: 10%;
+}
+.pai2 h1~p {
+    color: red;
+}
+
+.pai3 {
+    padding-top: 10%;
+}
+
+.pai3 .one~.two{
+    color: red;
+}
+
+[meu-atributo="heading2"] /*não é obrigatório que o atributo tenha um valor, porém é recomendado*/{
+    color: orangered;
+}
+
+[checked] {
+    width: 50px;
+    height: 50px;
+}
