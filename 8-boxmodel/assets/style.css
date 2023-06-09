@@ -1,0 +1,16 @@
+.texto {
+    box-sizing: border-box; /* o border-box acrescenta padding e border para dentro do conteúdo e a margin para fora do conteúdo */
+    background: lightcoral;
+    width: 100%;
+    min-width: 0;
+    max-width: 900px;
+    max-height: 500px;
+    min-height: 100px; /* mesmo que não tenha conteúdo a altura mínima será 100px */
+    height: 100%;
+    overflow: auto; /* ajusta o tamanho do conteúdo, pode ser no eixo x e/ou y */
+    margin: 0 auto 50px auto;
+    padding: 50px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: black;
+}
