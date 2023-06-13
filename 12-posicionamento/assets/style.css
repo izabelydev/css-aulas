@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding: 2%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+
+.pai {
+    height: 300vh;
+}
+
+.filha1, .filha2, .filha3 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.filha1 {
+    background: rgba(218, 112, 214, 0.671);
+}
+
+.filha2 {
+    background: greenyellow;
+    position: absolute;
+    top: 30%;
+    right: 60px;
+}
+
+.filha3 {
+    background: teal;
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.filha3 span {
+    background: rgba(245, 222, 179, 0.692);
+    font-size: 18px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}                                       
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background: blueviolet;
+    top: 0;
+}
