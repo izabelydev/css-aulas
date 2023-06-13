@@ -1,0 +1,29 @@
+.one {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 600;
+    direction: rtl;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 1.5em;
+}
+
+.two {
+    text-align: justify;
+    text-decoration: line-through underline;
+    text-indent: 50px;
+}
+
+h1.two-param {
+    text-shadow: 2px 2px red;
+    /* 2 parametros fazem marcação em volta, pode ter valores negativos para definir esquerda e direita */
+}
+
+h1.three-param {
+    text-shadow: 2px 2px 5px red;
+    /* 3 parametros fazem a sombra em volta, pode ter valores negativos para definir esquerda e direit */
+}
+
+h1.transform:hover {
+    text-transform: uppercase;
+}
