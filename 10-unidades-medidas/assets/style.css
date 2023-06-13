@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    /* o elemento html é root */
+    scroll-behavior: smooth;
+    /* fazer a página rolar */
+}
+
+header {
+    font-size: 2em;
+    padding: 1em;
+}
+
+/* "em" e "%" é relativo ao elemento pai, "rem" é relativo ao root */
+.pai {
+    /* vw é 1%  de width em relação ao viewport */
+    width: 80vw;
+    /* vh é 1%  de heigth em relação ao viewport */
+    height: 30em;
+    background: yellow;
+}
+
+p {
+    font-size: 3vmax;
+    /* vmax = max viewport
+    vmin = minimo viewport */
+}
+
+.color-one {
+    background: violet;
+}
+
+.color-two {
+    background: turquoise;
+}
