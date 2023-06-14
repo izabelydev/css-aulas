@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .5s;
+}
+
+
+.logo {
+    width: 90px;
+}
+
+
+header {
+    position: fixed;
+    padding: 10px 50px;
+    width: 100%;
+    background: rgba(0, 8, 29, 0.7);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.navegacao a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.navegacao a:hover {
+    text-decoration: underline #ffffff9c;
+}
+
+.fundo {
+    width: 100%;
+    height: 590px;
+    background: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(https://wallpaperaccess.com/full/5543172.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+}
+
+.introducao {
+    position: relative;
+    margin: 0 auto;
+    top: 200px;
+    width: 300px;
+    height: 280px;
+    backdrop-filter: blur(15px);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff79;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 2px 2px 5px;
+}
+
+.introducao h2, .p {
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+}
+
+.fin-jake {
+    position: relative;
+    width: 100px;
+    margin: 5px;
+}
+
+.img-terra-ooo {
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.conteudo {
+    position: relative;
+    margin: 0 auto;
+    top: 100px;
+    width: 700px;
+    height: 400px;
+    backdrop-filter: blur(15px);
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff79;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: 2px 2px 5px;
+}
+
+#terra-ooo-id {
+    background: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(https://1.bp.blogspot.com/-sDNP9EtumaE/W5HkFZANyHI/AAAAAAAACfo/8xlcvUsmcJ0wZynCSY0wJb8BZ3ACaXZ4wCLcBGAs/s1600/AT_earth2.jpg);
+    width: 100%;
+    height: 590px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#reino-doce-id {
+    background: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(https://pm1.narvii.com/6840/56b50a580b12af41d39e512fcf2671f4a6523f72_00.jpg);
+    width: 100%;
+    height: 590px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#casa-arvore-id {
+    background: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(https://i.pinimg.com/736x/89/fc/cc/89fccca43accec7535e4f2ae6498922f--adventure-time-wallpaper-tree-forts.jpg);
+    width: 100%;
+    height: 590px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#cd-ladroes-id {
+    background: linear-gradient(0deg, rgba(0, 8, 29, 0.7), rgba(0, 8, 29, 0.7)), url(https://i.pinimg.com/736x/89/fc/cc/89fccca43accec7535e4f2ae6498922f--adventure-time-wallpaper-tree-forts.jpg);
+    width: 100%;
+    height: 590px;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
