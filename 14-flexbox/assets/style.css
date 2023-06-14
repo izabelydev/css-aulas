@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    /* Define como principal eixo: row => eixo X(main) | column => eixo Y(cross) */
+    justify-content: center;
+    /* justify content se baseia no principal eixo */
+    align-items: flex-end;
+    /* align items se baseia no eixo perpendicular */
+    background: orangered;
+    height: 500px;
+    /*  gap: 30px;
+    define espaço entre os elementos, porém não funciona em todos os navegadores */
+}
+
+.flex-item {
+    /* width: 100%; */
+    border: 1px solid #fff;
+    background: #ffffff70;
+    margin: 10px;
+}
+
+.flex-item:nth-child(3) {
+    font-size: 40px;
+}
