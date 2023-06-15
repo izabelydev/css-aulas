@@ -6,25 +6,28 @@
 
 .flex-container {
     display: flex;
-    flex-direction: column;
-    /* Define como principal eixo: row => eixo X(main) | column => eixo Y(cross) */
-    justify-content: center;
+    flex-wrap: wrap;
+    /* flex-direction: column;
+    Define como principal eixo: row => eixo X(main) | column => eixo Y(cross) */
+    justify-content: flex-start;
     /* justify content se baseia no principal eixo */
-    align-items: flex-end;
-    /* align items se baseia no eixo perpendicular */
+    align-items: flex-start;
+    /* align items (alinhar itens) se baseia no eixo perpendicular */
+    align-content: center;
+    /* align content (alinhar conteudo) */
     background: orangered;
-    height: 500px;
+    height: 640px;
     /*  gap: 30px;
     define espaço entre os elementos, porém não funciona em todos os navegadores */
 }
 
 .flex-item {
-    /* width: 100%; */
+    width: 33.33%;
     border: 1px solid #fff;
     background: #ffffff70;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
-.flex-item:nth-child(3) {
+/* .flex-item:nth-child(3) {
     font-size: 40px;
-}
+} */
