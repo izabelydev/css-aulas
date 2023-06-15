@@ -12,7 +12,9 @@ body {
     /* max-width: 1200px; */
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: [um]1fr [dois]1fr [tres]1fr [quatro]; */
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-template-rows:  [um]1fr [dois]1fr [tres]1fr [quatro];
     /* fr => fragmento : ocupa/divide todo o espaço restante proporcionalmente. repeat(X vezes, Y fragmentos) */
 
     gap: 30px;
@@ -25,16 +27,25 @@ body {
 
 .grid div:nth-child(5) {
     background: darkblue;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    /* grid-row-start: ; 
-       grid-row-end: ; */
-       grid-row: span 4;
-       /* grid-column: span 4; */
+    grid-column: span 2;
+
+    /* grid-area: um / um / dois / tres; */
+    /* inicia coluna e linha um, termina na coluna e linha quatro */
+
+    /* grid-column-start: 2;
+       grid-column-end: 4;
+       grid-column-start: um;
+       grid-column-end: quatro;
+       grid-row-start: ; 
+       grid-row-end: ; 
+       grid-row: span 1;
+       grid-column: span 2;
+       grid-column: um / tres;
+       grid-row: um / quatro; */
 }
 
-@media (max-width: 769px) {
+/* @media (max-width: 769px) {
     .grid div:nth-child(5) {
         grid-column: span 1;
     }
-}
+} */
