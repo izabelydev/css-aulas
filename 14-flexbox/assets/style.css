@@ -6,28 +6,65 @@
 
 .flex-container {
     display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column;
+    
+    flex-flow: nowrap; /* parecido com flex-wrap */
+
+    /*  flex-direction: row;
     Define como principal eixo: row => eixo X(main) | column => eixo Y(cross) */
-    justify-content: flex-start;
+
+    justify-content: space-between;
     /* justify content se baseia no principal eixo */
+
     align-items: flex-start;
     /* align items (alinhar itens) se baseia no eixo perpendicular */
-    align-content: center;
-    /* align content (alinhar conteudo) */
+
+    /* align-content: center;
+    align content (alinhar conteudo) */
+
     background: orangered;
-    height: 640px;
+    height: 500px;
+
     /*  gap: 30px;
     define espaço entre os elementos, porém não funciona em todos os navegadores */
 }
 
 .flex-item {
-    width: 33.33%;
+    width: 100%;
     border: 1px solid #fff;
     background: #ffffff70;
+    /* flex-grow: 1;
+    usa/divide o espaço sobrando para crescer/diminuir o elemento no tamanho da tela */
+
+    /* flex-shrink: 1;
+    0 não permite que o elemento diminua. 1 permite que o elemento diminua */
+
+    /* flex-basis: 320px;
+    espaço pré-definido para o flex-grow */
+
+    /* flex: 1 1 320px; */
+
+    /* height: 200px; */
+
     /* margin: 10px; */
 }
 
-/* .flex-item:nth-child(3) {
-    font-size: 40px;
+/* .flex-item:nth-child(2) {
+align-self: flex-end;
+}
+
+.flex-item:nth-child(3) {
+    align-self: center;
+    }
+
+.flex-item:nth-child(1) {
+    align-self: stretch;
 } */
+
+.flex-item:nth-child(1) {
+    order: 1;
+    /* muda a ordem maior da fila */
+}
+
+.flex-item:nth-child(2) {
+    order: 2;
+}
