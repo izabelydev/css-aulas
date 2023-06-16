@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: 'header header' 'nav main' 'rodape rodape';
+}
+
+.grid div:nth-child(1) {
+    grid-area: header;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid div:nth-child(2) {
+    grid-area: nav;
+    background: rgb(5, 157, 207);
+}
+
+.grid div:nth-child(3) {
+    grid-area: main;
+    background: lightgreen;
+}
+
+.grid div:nth-child(4) {
+    grid-area: rodape;
+    background: violet;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas: 'header' 'nav' 'main' 'rodape';
+    }
+}
